@@ -29,7 +29,7 @@ struct SyllableSequence: Sequence {
             self.symbols = symbols
             lastVowelIndex = symbols.lastIndex {
                 $0.phoneme.kind == .vowel
-            }!
+            }
         }
         
         mutating func next() -> Syllable? {
